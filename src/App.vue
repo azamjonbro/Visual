@@ -1,24 +1,16 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-
-
-</script>
-
 <template>
-  <div>Salom</div>
+  <div class="app-container">
+    <HomeView />
+  </div>
 </template>
 
+<script setup lang="ts">
+import HomeView from './views/HomeView.vue'
+</script>
+
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.app-container {
+  padding: 20px;
+  font-family: sans-serif;
 }
 </style>
